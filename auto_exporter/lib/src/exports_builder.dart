@@ -15,16 +15,17 @@ class ExportsBuilder implements Builder {
   @override
   Map<String, List<String>> get buildExtensions {
     return {
-      r'$lib$': ['$packageName.dart']
+      r'$lib$': ['$packageName.dart'],
     };
   }
 
   List<String> get exportSubPackage =>
       (options.config['sub_packages'] as List?)?.cast<String>() ?? [];
 
-  bool get isDefaultExportAll => options.config['default_export_all'] ?? true;
-
-  String get packageName => options.config['project_name'] ?? 'exports';
+  bool get isDefaultExportAll =>
+      options.config['default_export_all'] as bool? ?? true;
+  String get packageName =>
+      options.config['project_name'] as String? ?? 'exports';
 
   @override
   Future<void> build(BuildStep buildStep) async {
@@ -32,7 +33,7 @@ class ExportsBuilder implements Builder {
 
     final expList = <String>[];
     final content = <String>[];
-    await for (var exportLibrary in exports) {
+    await for (final exportLibrary in exports) {
       // each file
 
       final con = await buildStep.readAsString(exportLibrary);
@@ -41,7 +42,7 @@ class ExportsBuilder implements Builder {
       final ast = parseString(content: con).unit.childEntities;
 
       final exportUri = exportLibrary.uri.path;
-      if (exportUri.toString() != 'package:$packageName/$packageName.dart') {
+      if (exportUri != 'package:$packageName/$packageName.dart') {
         // not the file for exports
 
         if (ast.whereType<PartOfDirective>().isEmpty) {
@@ -54,7 +55,7 @@ class ExportsBuilder implements Builder {
         }
       }
     }
-    for (var e in exportSubPackage) {
+    for (final e in exportSubPackage) {
       expList.add("export 'package:$e/$e.dart';");
     }
     expList.add('');
@@ -63,8 +64,9 @@ class ExportsBuilder implements Builder {
     if (content.isNotEmpty) {
       content.sort();
       await buildStep.writeAsString(
-          AssetId(buildStep.inputId.package, 'lib/$packageName.dart'),
-          DartFormatter().format(content.join('\n')));
+        AssetId(buildStep.inputId.package, 'lib/$packageName.dart'),
+        DartFormatter().format(content.join('\n')),
+      );
     }
   }
 
@@ -77,9 +79,9 @@ class ExportsBuilder implements Builder {
     var ignoreCount = 0;
     var exportCount = 0;
 
-    List<String> ignoreList = [];
-    List<String> exportList = [];
-    List<String> normalList = [];
+    final ignoreList = <String>[];
+    final exportList = <String>[];
+    final normalList = <String>[];
 
     // class
     ast.whereType<NamedCompilationUnitMember>().forEach((e) {
