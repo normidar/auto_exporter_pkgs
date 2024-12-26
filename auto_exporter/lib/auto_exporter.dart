@@ -1,8 +1,5 @@
-library auto_exporter;
-
+import 'package:auto_exporter/src/exports_builder.dart';
 import 'package:build/build.dart';
-
-import 'src/exports_builder.dart';
 
 Builder exportsBuilder(BuilderOptions options) {
   return ExportsBuilder(options: options);
