@@ -1,0 +1,27 @@
+name: flutter_example
+description: an application by normidar.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_exporter_annotation: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  auto_exporter:
+    path: ../../
+  build_runner: ^2.4.6
+  build_test: ^2.2.0
+
+
+flutter:
+
+

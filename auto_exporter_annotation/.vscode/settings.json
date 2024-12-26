@@ -1,0 +1,10 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit",
+        "source.sortMembers": "explicit"
+    },
+    "dart.renameFilesWithClasses": "always",
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "editor.formatOnSaveMode": "file"
+}

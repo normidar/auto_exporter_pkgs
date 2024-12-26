@@ -1,0 +1,22 @@
+name: auto_exporter
+description: A Dart package that allows you to auto export files, see README.md to know how to use it, just use the terminal and change the dart file name.
+version: 3.4.1
+homepage: https://github.com/normidar-group/normidar_dart_series/tree/main/apps/auto_exporter
+
+publish_to: "none"
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  auto_exporter_annotation:
+    path: ../auto_exporter_annotation
+  build: ^2.4.0
+  build_resolvers: ^2.2.1
+  glob: ^2.1.2
+  source_gen: ^1.4.0
+  analyzer: ^6.4.1
+  dart_style: ^2.3.4
+
+dev_dependencies:
+  lints: ^2.1.1

@@ -1,0 +1,11 @@
+name: auto_exporter_annotation
+description: This library is an annotation for auto_exporter library, see auto_exporter for more information.
+version: 1.0.1
+homepage: https://github.com/normidar/auto_exporter
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dev_dependencies:
+  lints: ^2.1.0
+  test: ^1.24.0

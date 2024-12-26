@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      auto_exporter:
+        enabled: true
+
+builders:
+  auto_exporter:
+    import: "package:auto_exporter/auto_exporter.dart"
+    builder_factories: ["exportsBuilder"]
+    build_extensions: { "$lib$": [".exports.dart"] }
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]

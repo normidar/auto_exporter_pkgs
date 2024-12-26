@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: auto_exporter,auto_exporter_annotation
+dependency_overrides:
+  auto_exporter:
+    path: ../..
+  auto_exporter_annotation:
+    path: ../../../auto_exporter_annotation
