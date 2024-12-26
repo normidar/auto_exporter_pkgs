@@ -1,3 +1,7 @@
+## [3.4.2] - 2024-12-26
+
+* Remove comments on export file.
+
 ## [3.4.1] - 2024-6-28
 
 * Fix: Disordered comment
