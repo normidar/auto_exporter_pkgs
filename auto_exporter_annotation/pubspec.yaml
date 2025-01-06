@@ -1,7 +1,7 @@
 name: auto_exporter_annotation
-description: This library is an annotation for auto_exporter library, see auto_exporter for more information.
-version: 1.0.1
-homepage: https://github.com/normidar/auto_exporter
+description: This library is some annotations for auto_exporter library, see auto_exporter for more information.
+version: 1.0.2
+homepage: https://github.com/normidar/auto_exporter_pkgs
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
