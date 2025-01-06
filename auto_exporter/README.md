@@ -20,10 +20,10 @@ Using it is simple. Add the following code to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  auto_exporter_annotation: ^1.0.1
+  auto_exporter_annotation: <the latest version>
 
 dev_dependencies:
-  auto_exporter: ^3.3.0
+  auto_exporter: <the latest version>
   build_runner: ^2.4.6
   build_test: ^2.2.0
 ```
@@ -81,10 +81,3 @@ After running, the files should be exported.
 
 - @hasimyerlikaya -> IgnoreExport
 - @sm-riyadh -> AutoExport
-
-## TODO:
-
-> PR is well come, @normidar first please.
-
-- auto choose show and hide to make it shorter
-- A way to export a file or hide a file
