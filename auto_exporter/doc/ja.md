@@ -65,7 +65,7 @@ dart run build_runner build  # Dart SDK ほとんどの場合これでうまく�
 もしFlutterの場合これが必要かもしれません（実は上のコードもできると思います）：
 
 ```
-flutter packages pub run build_runner build  # Flutter SDK 
+flutter packages pub run build_runner build  # Flutter SDK
 ```
 
 実行完了後にファイルはエクポートされているはずです。

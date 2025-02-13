@@ -1,4 +1,3 @@
-
 # Auto Exporter
 
 [![pub package](https://img.shields.io/pub/v/auto_exporter.svg)](https://pub.dev/packages/auto_exporter)
@@ -80,4 +79,3 @@ flutter packages pub run build_runner build  # Flutter SDK의 경우
 
 - @hasimyerlikaya -> IgnoreExport
 - @sm-riyadh -> AutoExport
-

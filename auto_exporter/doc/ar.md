@@ -1,4 +1,3 @@
-
 # Auto Exporter
 
 [![pub package](https://img.shields.io/pub/v/auto_exporter.svg)](https://pub.dev/packages/auto_exporter)
@@ -50,4 +49,4 @@ targets:
       auto_exporter:
         options:
           default_export_all: true # إذا كانت true، يتم تصدير كل شيء افتراضيًا؛ إذا كانت false، يتم تصدير ملفات محددة فقط
-         
+```
