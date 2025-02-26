@@ -4,7 +4,7 @@ This repository is a collection of packages for auto_exporter.
 
 ## TODO
 
-> PR is well come.
+> PRs are welcome.
 
-- auto choose show and hide to make it shorter
-- A way to export a file or hide a file
+- Automatically choose to show or hide options to make it shorter
+- Add functionality to export or hide entire files
