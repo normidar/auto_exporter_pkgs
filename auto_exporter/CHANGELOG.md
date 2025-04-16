@@ -1,3 +1,9 @@
+## [3.5.0] - 2025-04-16
+
+- analyzer -> ^7.0.0
+- source_gen -> ^2.0.0
+- dart_style -> ^3.0.1
+
 ## [3.4.2] - 2024-12-26
 
 - Remove comments on export file.

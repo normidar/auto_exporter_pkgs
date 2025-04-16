@@ -4,13 +4,14 @@ import 'package:analyzer/dart/ast/syntactic_entity.dart';
 import 'package:build/build.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:glob/glob.dart';
+import 'package:pub_semver/pub_semver.dart';
 
 /// the ExportsBuilder will create the file to
 /// export all dart files
 class ExportsBuilder implements Builder {
-  BuilderOptions options;
-
   ExportsBuilder({required this.options});
+
+  BuilderOptions options;
 
   @override
   Map<String, List<String>> get buildExtensions {
@@ -65,7 +66,9 @@ class ExportsBuilder implements Builder {
       content.sort();
       await buildStep.writeAsString(
         AssetId(buildStep.inputId.package, 'lib/$packageName.dart'),
-        DartFormatter().format(content.join('\n')),
+        DartFormatter(
+          languageVersion: Version(3, 7, 0),
+        ).format(content.join('\n')),
       );
     }
   }

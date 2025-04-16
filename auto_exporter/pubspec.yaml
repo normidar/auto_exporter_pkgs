@@ -1,11 +1,11 @@
 dependencies:
-  analyzer: ^6.4.1
+  analyzer: ^7.0.0
   auto_exporter_annotation: ^1.0.1
   build: ^2.4.0
   build_resolvers: ^2.2.1
-  dart_style: ^2.3.4
+  dart_style: ^3.0.1
   glob: ^2.1.2
-  source_gen: ^1.4.0
+  source_gen: ^2.0.0
 description: A Dart package that allows you to auto export files, see README.md to know how to use it, just use the terminal and change the dart file name.
 dev_dependencies:
   lints: ^2.1.1
@@ -13,4 +13,4 @@ environment:
   sdk: ">=2.12.0 <4.0.0"
 homepage: https://github.com/normidar/auto_exporter_pkgs
 name: auto_exporter
-version: 3.4.2
+version: 3.5.0
