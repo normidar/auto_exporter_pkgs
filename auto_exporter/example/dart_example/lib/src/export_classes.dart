@@ -10,9 +10,6 @@ class DefaultExport {}
 
 final finalNormal = 'Normal';
 
-enum MyEnum {
-  value1,
-  value2,
-}
+enum MyEnum { value1, value2 }
 
 void abc() {}
